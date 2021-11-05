@@ -68,7 +68,7 @@ plt.xlabel("Month-Year")
 plt.xticks(rotation=60)
 plt.legend()
 plt.ylabel("Future confirmed cases")
-plt.title("Lineplot--Q1a.")
+plt.title("Future Predictions")
 plt.tight_layout()
 plt.show()
 

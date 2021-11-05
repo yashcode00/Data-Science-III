@@ -83,7 +83,7 @@ plt.tight_layout()
 plt.show()
 
 # Q2 (b) (ii)
-# plotting linear plot between actual and predicted cases frequency
+# plotting linear plot between actual and predicted cases frequency vs Date
 plt.plot(test['Date'],test['new_cases'],alpha=0.86,label='Actual')
 plt.plot(test['Date'],predictions,alpha=0.86,label='Predictions')
 plt.legend()

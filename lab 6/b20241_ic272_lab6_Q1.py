@@ -76,6 +76,7 @@ plt.show()
 # Part-Q1 (e) ---------------------------------------------------------------------------------->>>>>>>>>>>>>>>>>>>>>>>>
 ########################################################################################################################
 
+# using statsmodels module to use plot_acf for plotting autocorrelation trend
 sm.graphics.tsa.plot_acf(original_data)
 plt.tight_layout()
 plt.show()

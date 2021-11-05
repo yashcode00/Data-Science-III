@@ -58,7 +58,7 @@ for p in lags:
           round(mean_absolute_percentage_error(predictions, test['new_cases'])*100, 3))
 
 
-# now plotting bar graphs for bith rmse and mape
+# now plotting bar graphs for both rmse and mape
 plt.bar(lags,rmse_a,width =3)
 plt.title("Bar chart: lags v RMSE(%) ")
 plt.xlabel("Lag in time sequence (in days)")

@@ -61,7 +61,11 @@ for t in range(len(test)):
 
 
 print("\nQ4 ")
-print("The best lag value comes to be :",p-1)
+print("The best lag value comes to be :",p-1," days!")
 print("The RMSE (%) is: ", round(rmsep(predictions, test['new_cases']), 3), "\nAnd MAPE (%) is: ",
       round(mean_absolute_percentage_error(predictions, test['new_cases'])*100, 3))
+print("\nThe heuristics for calculating the optimal number of lags have slightly increased the best values obtained \n"
+      "for lag of 15 days in the previous problem. The difference is though very small and can be easily neglected. We \n"
+      "may say that the heuristics have provided a good result, but the same or slightly better result could have been \n"
+      "obtained out of much smaller lag of 15 days. This also computationally less intensive.")
 
