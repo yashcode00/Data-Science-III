@@ -83,10 +83,13 @@ plt.tight_layout()
 plt.show()
 
 # Q2 (b) (ii)
-# plotting scatter plot between actual and predicted cases frequency
-plt.plot(test['new_cases'],predictions,alpha=0.86)
-plt.xlabel("Actual Cases")
-plt.ylabel("Predicted Cases")
+# plotting linear plot between actual and predicted cases frequency
+plt.plot(test['Date'],test['new_cases'],alpha=0.86,label='Actual')
+plt.plot(test['Date'],predictions,alpha=0.86,label='Predictions')
+plt.legend()
+matplotlib.dates.DateFormatter('%d')
+plt.xlabel("Year-Month")
+plt.ylabel("Cases")
 plt.title("Line plot between actual and predicted values")
 plt.tight_layout()
 plt.show()
