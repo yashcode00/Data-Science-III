@@ -1,6 +1,9 @@
 import numpy as np
 import pandas as pd
 
-dict={'Date': pd.date_range(start='10/3/2021', end='1/31/2022'), 'Cases': np.zeros(121)}
-test=pd.DataFrame(dict)
-print(test)
+count=0
+for j in range(1,1000):
+    for i in range(1,j+1):
+        count+=1
+        print(i," ",j)
+print(count)
