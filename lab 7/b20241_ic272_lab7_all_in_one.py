@@ -161,7 +161,7 @@ plt.title("The plot between K and Purity Score ")
 plt.show()
 
 print("The optimal number of clusters using Elbow method are: 3 ")
-print("The purity score for optimal value of cluster (K=4) is 0.887")
+print("The purity score for optimal value of cluster (K=3) is 0.887")
 
 ##############################################################################################################################################################
 # Question 4
@@ -244,7 +244,7 @@ plt.title("The plot between K and Purity Score ")
 plt.show()
 
 print("The optimal number of clusters using Elbow method are: 3 ")
-print("The purity score for optimal value of cluster (K=4) is 0.98")
+print("The purity score for optimal value of cluster (K=3) is 0.98")
 
 
 ##############################################################################################################################################################
