@@ -62,6 +62,7 @@ print("Q2------------------>")
 # for K = 3
 k = 3
 kmeans = KMeans(n_clusters=k)
+# fitting reduced data
 kmeans.fit(df2)
 kmeans_prediction = pd.DataFrame({'class': kmeans.predict(df2)})
 combined = pd.concat([df2, kmeans_prediction], axis=1)
@@ -228,7 +229,7 @@ for k in arr:
     print("The Distortion measure and Purity score for k= " + str(k) + " is: ", round(distortion, 3), " and ",
           round(find_purity(gmm.predict(df2), df['Species']), 3))
 
-# plotting scatter graph between distortion measure and k value (ni. of clusters)
+# plotting scatter graph between distortion measure and k value (no. of clusters)
 plt.plot(arr, J, marker='o', linestyle='dashed')
 plt.xlabel("Number of Cluster (K)")
 plt.ylabel("Distortion Measure")

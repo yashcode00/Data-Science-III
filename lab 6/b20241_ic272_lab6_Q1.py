@@ -57,7 +57,7 @@ print('Q1.(d)')
 lags=np.arange(2,7,1)
 # array to store correlation values
 lagged_corr=[]
-original_data=df['new_cases']
+original_data=df['new_cases'].copy()
 for p in lags:
     df_lagbyp=df['new_cases'][:-p]
     corr_lagbyp=round(np.corrcoef(df_lagbyp,original_data[p:])[0,1],5)
